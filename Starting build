@@ -1,7 +1,5 @@
--- https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/refs/heads/main/V1ofSCS
---loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/refs/heads/main/V1ofSCS'))()
--- https://raw.githubusercontent.com/ParallaxCube/d/d1ab99819238a2fcc4cd2252a891a26163dbf35f/df
--- loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/d/d1ab99819238a2fcc4cd2252a891a26163dbf35f/df'))()
+
+
 
 -- Greet the local player
   local Players = game:GetService("Players")
@@ -19,27 +17,23 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 --rayfield /\
 ----------------------------------------------------------------------------
 
-local MainWindow = Rayfield:CreateWindow({
-   Name = "Welcome,"   ..  localPlayer.DisplayName .. "!",
-   Icon = "paw-print", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Welcome "..  localPlayer.DisplayName .. "!",
-   LoadingSubtitle = "by IamSkitten",
-   ShowText = " "..  localPlayer.DisplayName .."'s Ui", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
-
-   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
-
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
-
+local MainWindow              = Rayfield:CreateWindow({
+   Name                       = "Welcome,"   ..  localPlayer.DisplayName .. "!",
+   Icon                       = "paw-print", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle               = "Welcome "..  localPlayer.DisplayName .. "!",
+   LoadingSubtitle            = "by IamSkitten",
+   ShowText                   = " "..  localPlayer.DisplayName .."'s Ui", -- for mobile users to unhide rayfield, change if you'd like
+   Theme                      = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   ToggleUIKeybind            = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   DisableRayfieldPrompts     = false,
+   DisableBuildWarnings       = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
    ConfigurationSaving = {
-      Enabled = true,
-      FolderName = "Iamskittenconfigfilenameforfile"..  localPlayer.DisplayName .. "!", -- Create a custom folder for your hub/game
-      FileName = "Iamskittenconfigfilename"..  localPlayer.DisplayName .. "!"
+      Enabled                 = true,
+      FolderName              = "Iamskittenconfigfilenameforfile"..  localPlayer.DisplayName .. "!", -- Create a custom folder for your hub/game
+      FileName                = "Iamskittenconfigfilename"..  localPlayer.DisplayName .. "!"
    },
-
    Discord = {
-      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Enabled                 = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
