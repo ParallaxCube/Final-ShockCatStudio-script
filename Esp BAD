@@ -1,0 +1,184 @@
+-- The function that takes place when the toggle is pressed
+-- Place this script in a LocalScript inside StarterPlayer -> StarterPlayerScripts
+
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local player = Players.LocalPlayer
+local camera = game.Workspace.CurrentCamera
+
+-- Helper function to create a Billboard GUI for ESP
+local function createESP(character, charmType)
+    local billboardGui = Instance.new("BillboardGui")
+    billboardGui.Parent = character
+    billboardGui.Adornee = character.Head -- Adjust if your charm is not on the head
+    billboardGui.Size = UDim2.new(0, 150, 0, 150)
+    billboardGui.StudsOffset = Vector3.new(0, 2, 0) -- Position it above the character's head
+    
+    local frame = Instance.new("Frame")
+    frame.Parent = billboardGui
+    frame.Size = UDim2.new(1, 0, 1, 0)
+    
+    -- Customize appearance based on charmType (Killer or Survivor)
+    if charmType == "Killer" then
+        frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red for Killer
+    elseif charmType == "Survivor" then
+        frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green for Survivor
+    end
+    frame.BackgroundTransparency = 0.5
+end
+
+-- Monitor for players and their charms
+local function trackPlayers()
+    for _, targetPlayer in ipairs(Players:GetPlayers()) do
+        if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Head") then
+            -- Assume "Killer" has a different tag or object in their character
+            local charmType = targetPlayer.Team and targetPlayer.Team.Name
+            if charmType == "Killer" or charmType == "Survivor" then
+                createESP(targetPlayer.Character, charmType)
+            end
+        end
+    end
+end
+
+-- Update ESP when a new player enters the game
+Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        wait(3) -- Wait for the character to load
+        trackPlayers()
+    end)
+end)
+
+-- Continuously check if any existing players need ESP updates
+game:GetService("RunService").Heartbeat:Connect(function()
+    trackPlayers()
+end)
+
+
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+
+
+local Button = WallTab:CreateButton({
+   Name = "esp teams laggy",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+
+-- Place this script in a LocalScript inside StarterPlayer -> StarterPlayerScripts
+
+local Players = game:GetService("Players")
+local Workspace = game:GetService("Workspace")
+local player = Players.LocalPlayer
+local camera = game.Workspace.CurrentCamera
+
+-- Helper function to create a Billboard GUI for ESP
+local function createESP(character, charmType)
+    local billboardGui = Instance.new("BillboardGui")
+    billboardGui.Parent = character
+    billboardGui.Adornee = character.Head -- Adjust if your charm is not on the head
+    billboardGui.Size = UDim2.new(0, 150, 0, 150)
+    billboardGui.StudsOffset = Vector3.new(0, 2, 0) -- Position it above the character's head
+    
+    local frame = Instance.new("Frame")
+    frame.Parent = billboardGui
+    frame.Size = UDim2.new(1, 0, 1, 0)
+    
+    -- Customize appearance based on charmType (Killer or Survivor)
+    if charmType == "Killer" then
+        frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Red for Killer
+    elseif charmType == "Survivor" then
+        frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Green for Survivor
+    end
+    frame.BackgroundTransparency = 0.5
+end
+
+-- Monitor for players and their charms
+local function trackPlayers()
+    for _, targetPlayer in ipairs(Players:GetPlayers()) do
+        if targetPlayer.Character and targetPlayer.Character:FindFirstChild("Head") then
+            -- Assume "Killer" has a different tag or object in their character
+            local charmType = targetPlayer.Team and targetPlayer.Team.Name
+            if charmType == "Killer" or charmType == "Survivor" then
+                createESP(targetPlayer.Character, charmType)
+            end
+        end
+    end
+end
+
+-- Update ESP when a new player enters the game
+Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        wait(3) -- Wait for the character to load
+        trackPlayers()
+    end)
+end)
+
+-- Continuously check if any existing players need ESP updates
+game:GetService("RunService").Heartbeat:Connect(function()
+task.wait(0.7)
+    trackPlayers()
+end)
+
+
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+
+
+local Button = WallTab:CreateButton({
+   Name = "ESP (Untested for performance)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+
+   local Players = game:GetService("Players")
+   local Workspace = game:GetService("Workspace")
+
+   -- Helper function to create ESP highlights
+   local function createESP(character)
+       if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+
+       -- Loop through all parts of the character and add a highlight effect
+       for _, part in pairs(character:GetChildren()) do
+           if part:IsA("BasePart") then
+               local highlight = Instance.new("Highlight")
+               highlight.Parent = part
+               highlight.Adornee = part
+               highlight.FillColor = Color3.fromRGB(250, 2, 2)  -- Red color (customizable)
+               highlight.FillTransparency = 0.5
+               highlight.OutlineColor = Color3.fromRGB(250, 2, 2) -- Red outline (customizable)
+               highlight.OutlineTransparency = 0.5
+           end
+       end
+   end
+
+   -- Function to monitor and apply ESP to existing players' characters
+   local function trackPlayers()
+       for _, targetPlayer in ipairs(Players:GetPlayers()) do
+           if targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+               createESP(targetPlayer.Character)
+           end
+       end
+   end
+
+   -- Update ESP when a new player enters the game
+   Players.PlayerAdded:Connect(function(player)
+       player.CharacterAdded:Connect(function(character)
+           wait(1) -- Wait for the character to fully load
+           createESP(character)
+       end)
+   end)
+
+   -- Continuously monitor and add ESP when necessary
+   game:GetService("RunService").Heartbeat:Connect(function()
+       trackPlayers()
+   end)
+
+   -- The function that takes place when the button is pressed
+   end,
+})
+----------------------------------------------------------------------------
+--  (normal) /\    ESP                                                        
+----------------------------------------------------------------------------
