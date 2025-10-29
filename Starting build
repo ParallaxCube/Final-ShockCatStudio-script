@@ -99,7 +99,7 @@ local Button = Tab11:CreateButton({--misc tab
 ----------------------------------------------------------------------------
 --   Gen Gui Spawner (normal) \/
 ----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({--gen tab
+local Button = Tab12:CreateButton({--gen tab
    Name = "Button Example",
    Callback = function()
    -- The function that takes place when the button is pressed
@@ -112,6 +112,42 @@ local Button = Tab11:CreateButton({--gen tab
 })
 ----------------------------------------------------------------------------
 --   Gen Gui Spawner (normal) /\
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+--   (normal) \/  spoofer                                                         
+----------------------------------------------------------------------------
+local Button = Tab11:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+    -- The URL to your script on GitHub
+      local scriptUrl = 'https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Spoof'  -- Replace with your actual GitHub link
+        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
+      end)
+  -- The function that takes place when the button is pressed
+   end,
+})
+----------------------------------------------------------------------------
+--  (normal) /\  Spoofer                                                          
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+--   (normal) \/    Lag Challange                                                       
+----------------------------------------------------------------------------
+local Button = Tab11:CreateButton({
+   Name = "Lag Challange (Memory leak)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+    -- The URL to your script on GitHub
+      local scriptUrl = ' https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/laggy  '  -- Replace with your actual GitHub link
+        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
+      end)
+  -- The function that takes place when the button is pressed
+   end,
+})
+----------------------------------------------------------------------------
+--  (normal) /\     Lag Challange                                                          
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
@@ -131,50 +167,3 @@ local Button = Tab12:CreateButton({
 ----------------------------------------------------------------------------
 --  (normal) /\                                                            
 ----------------------------------------------------------------------------
-
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) \/
-----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({--misc tab
-   Name = "Button Example",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl = 'https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/61efe209da5743e89f9bad065c8b1ecfefd12f21/Artshed'  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
-      end)
-  -- The function that takes place when the button is pressed
-   end,
-})
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) /\
-----------------------------------------------------------------------------
-
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) \/
-----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({--misc tab
-   Name = "Button Example",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl = 'https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/61efe209da5743e89f9bad065c8b1ecfefd12f21/Artshed'  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
-      end)
-  -- The function that takes place when the button is pressed
-   end,
-})
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) /\
-----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
