@@ -50,21 +50,21 @@ Key                     = {"1234"} -- List of keys that will be accepted by the 
 ----------------------------------------------------------------------------
 --Window Maker 
 ---------------------------------------------------------------------------- 
-local Tab1              =    MainWindow:CreateTab  ("MainPaw"                                      ,             "app-window-mac") -- Title, Image
-local Tab2              =    MainWindow:CreateTab  (" "..  localPlayer.DisplayName .. "!"     ,                    "annoyed") -- Title, Image
-local Tab3              =    MainWindow:CreateTab  ("Stamina"                                 ,             'chevrons-right')
-local Tab4              =    MainWindow:CreateTab  ("Visuals"                                 ,                   "scan-eye")
-local Tab5              =    MainWindow:CreateTab  ("Automation"                              ,                   'workflow')
-local Tab6              =    MainWindow:CreateTab  ("Device"                                  ,             'laptop-minimal')
-local Tab7              =    MainWindow:CreateTab  ("Stun(s)"                                 ,               'shield-alert')
-local Tab8              =    MainWindow:CreateTab  ("Savefile!"                                ,     'gallery-horizontal-end')
-local Tab9              =    MainWindow:CreateTab  ("Status"                                  ,                 'settings-2')
-local Tab11             =    MainWindow:CreateTab  ("Misc"                                    ,                        'cog')
-local Tab12             =    MainWindow:CreateTab  ("Generators"                              ,                        "cog")
-local Tab13             =    MainWindow:CreateTab  ("Experimental"                            ,                       "bolt")
-local Tab14             =    MainWindow:CreateTab  ("Creds"                                   ,                        "cog")
-local Tab15             =    MainWindow:CreateTab  ("Fake Block Animations"                   ,                        "cog")
-tab = Tab8
+local Tab1   =    MainWindow:CreateTab  ("MainPaw"                                      ,             "app-window-mac") -- Title, Image
+local Tab2   =    MainWindow:CreateTab  (" "..  localPlayer.DisplayName .. "!"     ,                    "annoyed") -- Title, Image
+local Tab3   =    MainWindow:CreateTab  ("Stamina"                                 ,             'chevrons-right')
+local Tab4   =    MainWindow:CreateTab  ("Visuals"                                 ,                   "scan-eye")
+local Tab5   =    MainWindow:CreateTab  ("Automation"                              ,                   'workflow')
+local Tab6   =    MainWindow:CreateTab  ("Device"                                  ,             'laptop-minimal')
+local Tab7   =    MainWindow:CreateTab  ("Stun(s)"                                 ,               'shield-alert')
+local Tab8   =    MainWindow:CreateTab  ("Savefile!"                                ,     'gallery-horizontal-end')
+local Tab9   =    MainWindow:CreateTab  ("Status"                                  ,                 'settings-2')
+local Tab11  =    MainWindow:CreateTab  ("Misc"                                    ,                        'cog')
+local Tab12  =    MainWindow:CreateTab  ("Generators"                              ,                        "cog")
+local Tab13  =    MainWindow:CreateTab  ("Experimental"                            ,                       "bolt")
+local Tab14  =    MainWindow:CreateTab  ("Creds"                                   ,                        "cog")
+local Tab15  =    MainWindow:CreateTab  ("Fake Block Animations"                   ,                        "cog")
+tab          = Tab8
 ----------------------------------------------------------------------------
 --Tabs /\ 15
 ----------------------------------------------------------------------------
