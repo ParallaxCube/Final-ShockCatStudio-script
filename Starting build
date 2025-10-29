@@ -67,12 +67,7 @@ local Tab15  =    MainWindow:CreateTab  ("Fake Block Animations"                
 tab          = Tab8
 ----------------------------------------------------------------------------
 --Tabs /\ 15
-----------------------------------------------------------------------------
-local Section = RunningTab:CreateSection("Stam")
-local Section = FEBETab:CreateSection("Fake Block Controls")
-local Section = WallTab:CreateSection("Esp")
-
---==========================================================================
+---------------------------------------------------------------------------
 --   ArtistShedletsky button (normal) \/
 ----------------------------------------------------------------------------
 local Button = Tab11:CreateButton({--misc tab
