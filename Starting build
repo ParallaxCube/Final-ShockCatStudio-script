@@ -16,17 +16,17 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name                 = "ShockCatStudios V4",
    Icon                 = "paw-print", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle         = "ShockCS  presents",
-   LoadingSubtitle      = "by Sirius",
-   ShowText             = "Rayfield", -- for mobile users to unhide rayfield, change if you'd like
+   LoadingTitle         = "ShockCS  presents!",
+   LoadingSubtitle      = "by IamSkitten",
+   ShowText             = " "..localPlayer.DisplayName .."'s Ui" -- for mobile users to unhide rayfield, change if you'd like
    Theme                = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
-   ToggleUIKeybind      = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+   ToggleUIKeybind      = "P", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
    ConfigurationSaving  = {
       Enabled           = true,
-      FolderName        = nil, -- Create a custom folder for your hub/game
-      FileName          = "Big Hub"                                                                                      },
+      FolderName        = "CatSSIsprettygoodtbh", -- Create a custom folder for your hub/game
+      FileName          = "CatSSIsprettygoodHub"                                                                                      },
       Discord           = {
       Enabled           = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite            = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
@@ -35,10 +35,10 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title    = "Untitled",
+      Title    = " This is  " ..localPlayer.DisplayName .. "'s Key system . . .",
       Subtitle = "Key System",
-      Note     = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
-      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      Note     = " "..localPlayer.DisplayName .." Your key is 1234 please type it in below!", -- Use this to tell the user how to get a key
+      FileName = "Key_$k1tt3nistheownerof$h0ckC4t$tudi0s", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey  = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key      =   {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
@@ -47,7 +47,7 @@ local Window = Rayfield:CreateWindow({
 ----------------------------------------------------------------------------
 --Window Maker 
 ---------------------------------------------------------------------------- 
-local Tab1   =    MainWindow:CreateTab  ("MainPaw"                                 ,  "app-window-mac") -- Title, Image
+local Tab1   =    MainWindow:CreateTab  ("ThyMainPaw"                              ,  "app-window-mac") -- Title, Image
 local Tab2   =    MainWindow:CreateTab  (" "..  localPlayer.DisplayName .. "!"     ,  "annoyed") -- Title, Image
 local Tab3   =    MainWindow:CreateTab  ("Stamina"                                 ,  'chevrons-right')
 local Tab4   =    MainWindow:CreateTab  ("Visuals"                                 ,  "scan-eye")
@@ -68,12 +68,10 @@ tab          = Tab8
 --   ArtistShedletsky button (normal) \/
 ----------------------------------------------------------------------------
 local Button = Tab11:CreateButton({--misc tab
-   Name = "Button Example",
+   Name = "Artist Shedletsky",
    Callback = function()
    -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl1 = 'https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/61efe209da5743e89f9bad065c8b1ecfefd12f21/Artshed'  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl1))()  -- Executes the code from GitHub
+        loadstring(game:HttpGet( 'https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/61efe209da5743e89f9bad065c8b1ecfefd12f21/Artshed' ))()  -- Executes the code from GitHub
       end)
   -- The function that takes place when the button is pressed
    end,
@@ -86,12 +84,10 @@ local Button = Tab11:CreateButton({--misc tab
 --   Gen Gui Spawner (normal) \/
 ----------------------------------------------------------------------------
 local Button = Tab12:CreateButton({--gen tab
-   Name = "Button Example",
+   Name = "Spawns GenGui",
    Callback = function()
    -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl2 = 'https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/GenSpawnButton'  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl2))()  -- Executes the code from GitHub
+        loadstring(game:HttpGet(  'https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/GenSpawnButton' ))()  -- Executes the code from GitHub
       end)
   -- The function that takes place when the button is pressed
    end,
@@ -104,12 +100,10 @@ local Button = Tab12:CreateButton({--gen tab
 --   (normal) \/  spoofer                                                         
 ----------------------------------------------------------------------------
 local Button = Tab11:CreateButton({
-   Name = "Button Example",
+   Name = "Spoofer",
    Callback = function()
    -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl3 = 'https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Spoof'  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl3))()  -- Executes the code from GitHub
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Spoof'))()  -- Executes the code from GitHub
       end)
   -- The function that takes place when the button is pressed
    end,
@@ -125,9 +119,7 @@ local Button = Tab11:CreateButton({
    Name = "Lag Challange (Memory leak)",
    Callback = function()
    -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl = ' https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/laggy  '  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
+        loadstring(game:HttpGet(' https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/laggy  '))()  -- Executes the code from GitHub
       end)
   -- The function that takes place when the button is pressed
    end,
@@ -140,12 +132,10 @@ local Button = Tab11:CreateButton({
 --   (normal) \/   Auto farm                                                        
 ----------------------------------------------------------------------------
 local Button = Tab12:CreateButton({
-   Name = "Button Example",
+   Name = "Untested auto farm",
    Callback = function()
    -- The function that takes place when the button is pressed
-    -- The URL to your script on GitHub
-      local scriptUrl = '  https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/0c729e63175b330c47a26c66847aa69b161b0908/auto%20farm%20untested '  -- Replace with your actual GitHub link
-        loadstring(game:HttpGet(scriptUrl))()  -- Executes the code from GitHub
+        loadstring(game:HttpGet('  https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/0c729e63175b330c47a26c66847aa69b161b0908/auto%20farm%20untested '))()  -- Executes the code from GitHub
       end)
   -- The function that takes place when the button is pressed
    end,
