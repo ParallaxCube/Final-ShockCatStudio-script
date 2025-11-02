@@ -1,20 +1,14 @@
+--// Speed & Stamina Boost Script (ShockCatStudios)
+--// Loaded via Rayfield button
 
-local Button = Tab23:CreateButton({
-   Name = "Speed (Both)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-        local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
-        sprintingModule.StaminaGain = tonumber(Input) or 21.5
-   -- The function that takes place when the button is pressed
-   end,
-})
+local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
 
-local Button =  Tab23:CreateButton({
-   Name = "Stamina Gain (s)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-           local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
-        sprintingModule.SprintSpeed = tonumber(Input) or 26.5
-   -- The function that takes place when the button is pressed
-   end,
-})
+-- Optional console message for confirmation
+print("[ShockCatStudios] ✅ Speed/Stamina script loaded.")
+
+-- Apply modified values
+sprintingModule.SprintSpeed = 26.5
+sprintingModule.StaminaGain = 21.5
+
+-- Optional status message
+print("[ShockCatStudios] ⚡ Sprint speed set to 26.5, stamina gain set to 21.5.")
