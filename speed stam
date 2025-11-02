@@ -1,0 +1,20 @@
+
+local Button = Tab23:CreateButton({
+   Name = "Speed (Both)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+        local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
+        sprintingModule.StaminaGain = tonumber(Input) or 21.5
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button =  Tab23:CreateButton({
+   Name = "Stamina Gain (s)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+           local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
+        sprintingModule.SprintSpeed = tonumber(Input) or 26.5
+   -- The function that takes place when the button is pressed
+   end,
+})
