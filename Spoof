@@ -3,7 +3,7 @@ local UserInputService = game:GetService("UserInputService")
 local Network = require(game.ReplicatedStorage.Modules.Network)
 
 local DeviceSpoof = {}
-local ForcedDevice = "Console" -- change to "Mobile", "Console" or "PC"
+local ForcedDevice = "PC" -- change to "Mobile", "Console" or "PC"
 
 DeviceSpoof.Changed = Instance.new("BindableEvent").Event
 DeviceSpoof.Value = ForcedDevice
