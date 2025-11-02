@@ -1,16 +1,8 @@
-game = false
-function KILLRETURN()
-  error "not in roblox please execute inside of roblox to continue this script!"
-  end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-if not game then do 
-  KILLRETURN()
-  end end
+
 ----------------------------------------------------------------------------
---rayfield /\
+-- Rayfield & peanut Protection!! BAHAHHAHA! 
 ----------------------------------------------------------------------------
-if game.PlaceId == 18687417158 then
-end
 -- Greet the local player
 local Players = game:GetService("Players")
     local TextChatService = game:GetService("TextChatService")
@@ -23,9 +15,10 @@ local localPlayer = Players.LocalPlayer
 if localPlayer then
     RBXGeneral:DisplaySystemMessage(string.format("Heyyy!!, %s! Your ShockCatStudio v1.035 UI is Ready!!", localPlayer.DisplayName))
 end
+print ("ShockCatStudio Was Executed for "..localPlayer.DisplayName .."!")
 ---------------------------------------------------------------------------------------------------------------
-local Window = Rayfield:CreateWindow({
-      Name                 = "ShockCatStudios V4",
+local MainWindow = Rayfield:CreateWindow({
+      Name                 = "ShockCatStudios 3.4v ",
        Icon                 = "paw-print", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
         LoadingTitle         = "ShockCS  presents!",
          LoadingSubtitle      = "by IamSkitten",
@@ -54,197 +47,291 @@ local Window = Rayfield:CreateWindow({
    }
 })
 ----------------------------------------------------------------------------
---Window Maker(s)
+--MainWindow Maker(s)
 ---------------------------------------------------------------------------- 
-local Tab01   =    MainWindow:CreateTab  ("NAN"             ,          "app-window-mac") -- Title, Image
-local Tab02   =    MainWindow:CreateTab  ("Nan"             ,                 "annoyed") -- Title, Image
-local Tab03   =    MainWindow:CreateTab  ("Nan"             ,          'chevrons-right')
-local Tab04   =    MainWindow:CreateTab  ("Nan"             ,                "scan-eye")
-local Tab05   =    MainWindow:CreateTab  ("Nan"             ,                'workflow')
-local Tab06   =    MainWindow:CreateTab  ("Nan"             ,          'laptop-minimal')
-local Tab07   =    MainWindow:CreateTab  ("Nan"             ,            'shield-alert')
-local Tab08   =    MainWindow:CreateTab  ("Nan"             ,  'gallery-horizontal-end')
-local Tab09   =    MainWindow:CreateTab  ("Nan"             ,              'settings-2')
-local Tab10   =    MainWindow:CreateTab  ("Nan"             ,                     'cog')
-local Tab11   =    MainWindow:CreateTab  ("Nan"             ,                     'cog')
-local Tab12   =    MainWindow:CreateTab  ("Nan"             ,                     "cog")
-local Tab13   =    MainWindow:CreateTab  ("Nan"             ,                    "bolt")
-local Tab14   =    MainWindow:CreateTab  ("Nan"             ,                     "cog")
-local Tab15   =    MainWindow:CreateTab  ("Nan"             ,                     "cog")
-local Tab16   =    MainWindow:CreateTab  ("Nan"             ,                     "cog") -- Title, Image
-local Tab17   =    MainWindow:CreateTab  ("Nan"             ,                     "cog") -- Title, Image
-local Tab18   =    MainWindow:CreateTab  ("Nan"             ,                     "cog") -- Title, Image
-local Tab19   =    MainWindow:CreateTab  ("Nan"             ,                     "cog")
-local Tab21   =    MainWindow:CreateTab  ("Nan"             ,                     "cog") -- Title, Image
+local Tab01   =    MainWindow:CreateTab  ("NameIsWIP1"             ,          "app-window-mac") -- Title, Image
+local Tab02   =    MainWindow:CreateTab  ("NameIsWIP2"             ,                 "annoyed") -- Title, Image
+local Tab03   =    MainWindow:CreateTab  ("NameIsWIP3"             ,          'chevrons-right')
+local Tab04   =    MainWindow:CreateTab  ("NameIsWIP4"             ,                "scan-eye")
+local Tab05   =    MainWindow:CreateTab  ("NameIsWIP5"             ,                'workflow')
+local Tab06   =    MainWindow:CreateTab  ("NameIsWIP6"             ,          'laptop-minimal')
+local Tab07   =    MainWindow:CreateTab  ("NameIsWIP7"             ,            'shield-alert')
+local Tab08   =    MainWindow:CreateTab  ("NameIsWIP8"             ,  'gallery-horizontal-end')
+local Tab09   =    MainWindow:CreateTab  ("NameIsWIP9"             ,              'settings-2')
+local Tab10   =    MainWindow:CreateTab  ("NameIsWIP10"             ,                     'cog')
+local Tab11   =    MainWindow:CreateTab  ("NameIsWIPso-on"             ,                     'cog')
+local Tab12   =    MainWindow:CreateTab  ("NameIsWIP11"             ,                     "cog")
+local Tab13   =    MainWindow:CreateTab  ("NameIsWIP12"             ,                    "bolt")
+local Tab14   =    MainWindow:CreateTab  ("NameIsWIP13"             ,                     "cog")
+local Tab15   =    MainWindow:CreateTab  ("NameIsWIP14"             ,                     "cog")
+local Tab16   =    MainWindow:CreateTab  ("NameIsWIP15"             ,                     "cog") -- Title, Image
+local Tab17   =    MainWindow:CreateTab  ("NameIsWIP16"             ,                     "cog") -- Title, Image
+local Tab18   =    MainWindow:CreateTab  ("NameIsWIP17"             ,                     "cog") -- Title, Image
+local Tab19   =    MainWindow:CreateTab  ("NameIsWIP18"             ,                     "cog")
+local Tab21   =    MainWindow:CreateTab  ("NameIsWIP19"             ,                     "cog") -- Title, Image
 local Tab22   =    MainWindow:CreateTab  ("nan"             ,                     "cog")
-local Tab23   =    MainWindow:CreateTab  ("UshouldNonseethis"             ,                     "cog") -- Title, Image
-local Tab     =    Tab23
-
+local Tab23   =    MainWindow:CreateTab  ("ErrorTabs"             ,                     "cog") -- Title, Image
+      Tab     =    Tab23
 ----------------------------------------------------------------------------
 --Tabs /\ 15
 ---------------------------------------------------------------------------
---   ArtistShedletsky button (normal) \/
-----------------------------------------------------------------------------
-local sammyissocool = 'https://raw.githubusercontent.com/ParallaxCube/ShockCatstudios-V1/61efe209da5743e89f9bad065c8b1ecfefd12f21/Artshed'
+--Tab for \|/ (    Shedletsky morph     )
+local Section1 = Tab23:CreateSection("Shedletsky")
 
-local Button = Tab11:CreateButton({--misc tab
-   Name = "Artist Shedletsky",
+local Button1 = Tab:CreateButton({
+   Name = "Shedletsky morph",
    Callback = function()
    -- The function that takes place when the button is pressed
-        loadstring(game:HttpGet(sammyissocool))()  -- Executes the code from GitHub
-  -- The function that takes place when the button is pressed
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Shedletsky%20morph%20art'))()
    end,
 })
-local function meep()
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/locals%20starting%20heere'))()
-end
-meep()
-----------------------------------------------------------------------------
---   ArtistShedletsky button (normal) /\
-----------------------------------------------------------------------------
+--        /|\                /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (    GenSpawnButton     )
+local Section2 = Tab23:CreateSection("GenSpawnGui")
 
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) \/
-----------------------------------------------------------------------------
-local Button = Tab12:CreateButton({--gen tab
-   Name = "Spawns GenGui",
+local Button2 = Tab23:CreateButton({
+   Name = "GenSpawnGui",
    Callback = function()
    -- The function that takes place when the button is pressed
-        loadstring(game:HttpGet(  'https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/GenSpawnButton' ))()  -- Executes the code from GitHub
-  -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('  https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/GenSpawnButton  '))() 
+      -- The function that takes place when the button is pressed
    end,
 })
-----------------------------------------------------------------------------
---   Gen Gui Spawner (normal) /\
-----------------------------------------------------------------------------
+--        /|\                /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         )
+local Section3 = Tab23:CreateSection("Bad Esp")
 
-----------------------------------------------------------------------------
---   (normal) \/  spoofer                                                         
-----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({
-   Name = "Spoofer",
+local Button3 = Tab:CreateButton({
+   Name = "Bad Esp",
    Callback = function()
    -- The function that takes place when the button is pressed
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Spoof'))()  -- Executes the code from GitHub
-  -- The function that takes place when the button is pressed
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Esp%20BAD'))()
+      -- The function that takes place when the button is pressed
    end,
 })
-----------------------------------------------------------------------------
---  (normal) /\  Spoofer                                                          
-----------------------------------------------------------------------------
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section4 = Tab23:CreateSection("WIP")
 
-----------------------------------------------------------------------------
---   (normal) \/    Lag Challange                                                       
-----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({
-   Name = "Lag Challange (Memory leak)",
+local Button4 = Tab:CreateButton({
+   Name = "ButtonWip",
    Callback = function()
    -- The function that takes place when the button is pressed
-        loadstring(game:HttpGet(' https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/laggy  '))()  -- Executes the code from GitHub
-  -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
    end,
 })
-----------------------------------------------------------------------------
---  (normal) /\     Lag Challange                                                          
-----------------------------------------------------------------------------
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section5 = Tab23:CreateSection("WIP")
 
-----------------------------------------------------------------------------
---   (normal) \/   Auto farm                                                        
-----------------------------------------------------------------------------
-local Button = Tab12:CreateButton({
-   Name = "Untested auto farm",
+local Button5 = Tab:CreateButton({
+   Name = "ButtonWip",
    Callback = function()
    -- The function that takes place when the button is pressed
-        loadstring(game:HttpGet('  https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/0c729e63175b330c47a26c66847aa69b161b0908/auto%20farm%20untested '))()  -- Executes the code from GitHub
-  -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
    end,
 })
-----------------------------------------------------------------------------
---  (normal) /\                                                            
-----------------------------------------------------------------------------
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section6 = Tab23:CreateSection("WIP")
 
-----------------------------------------------------------------------------
---\/ Fblock
-----------------------------------------------------------------------------
--- Create Tab and Section for FakeBlock functionality
-
-
--- Function to play the Fake Block Animations
-local function playFakeBlockAnimation(animId)
-    local char = localPlayer.Character
-    if char then
-        local humanoid = char:FindFirstChildOfClass("Humanoid")
-        if humanoid then
-            local anim = Instance.new("Animation")
-            anim.AnimationId = "rbxassetid://" .. animId
-            local track = humanoid:LoadAnimation(anim)
-            track:Play()
-        end
-    end
-end
-
--- Buttons for each animation mode
-FEBETab:CreateButton({
-    Name = "Fake Block (Normal)",
-    Callback = function()
-        playFakeBlockAnimation("72722244508749") -- Normal animation ID
-    end
-})
-
-FEBETab:CreateButton({
-    Name = "Fake Block (M3&4)",
-    Callback = function()
-        playFakeBlockAnimation("96959123077498") -- M3&4 animation ID
-    end
-})
-
-FEBETab:CreateButton({
-    Name = "Toggle Fake Block GUI",
-    Callback = function()
-        -- This will toggle the visibility of the Rayfield UI
-        Rayfield:ToggleUI()
-    end
-})
-----------------------------------------------------------------------------
---FAKE BLOCK /\
-----------------------------------------------------------------------------
-
-----------------------------------------------------------------------------
---   (normal) \/   ESP                                                    
-----------------------------------------------------------------------------
-local Button = Tab11:CreateButton({
-   Name = "Button Example",
+local Button6 = Tab:CreateButton({
+   Name = "ButtonWip",
    Callback = function()
    -- The function that takes place when the button is pressed
-   loadstring(game:HttpGet('raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Esp%20BAD'))()
-   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
    end,
 })
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section7 = Tab23:CreateSection("WIP")
+
+local Button7 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section8 = Tab23:CreateSection("WIP")
+
+local Button8 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+--        /|\             /|\
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section9 = Tab23:CreateSection("WIP")
+
+local Button9 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                       /|\
 ----------------------------------------------------------------------------
---   (normal) /\   ESP                                                    
+--Tab for \|/ (     Fake block    ) \|/
+local Section9 = Tab23:CreateSection("Fblock")
+
+local Button9 = Tab:CreateButton({
+   Name = "Fblock",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('  https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/Fblock  '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                /|\
 ----------------------------------------------------------------------------
+--// Tab for \|/ (    speed and StaminaGain     )    \|/
+local Section9 = Tab23:CreateSection("Speed/Stam")
 
+--// Button to load external script from GitHub
+local Button9 = Tab23:CreateButton({
+   Name = "S&Stam",
+   Callback = function()
+      -- Replace the link below with your GitHub raw URL
+      local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/ParallaxCube/Final-ShockCatStudio-script/refs/heads/main/speed%20stam"))()
+   end,
+})
 
-
-local Button = Tab11:CreateButton({
+--// Toggle for Speed
+local SpeedToggle = Tab23:CreateToggle({
    Name = "Speed (Both)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-        local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
-        sprintingModule.StaminaGain = tonumber(Input) or 21.5
-   -- The function that takes place when the button is pressed
+   CurrentValue = false,
+   Callback = function(state)
+      -- state = true when toggled ON, false when OFF
+      local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
+      if state then
+         -- Enable modified speed
+         sprintingModule.SprintSpeed = 26.5
+         sprintingModule.StaminaGain = 21.5
+         print("⚡ Speed Boost Activated!")
+      else
+         -- Reset to default
+         sprintingModule.SprintSpeed = 26
+         sprintingModule.StaminaGain = 21
+         print("🏃 Speed Reset to Default.")
+      end
    end,
 })
 
-local Button =  Tab11:CreateButton({
+--// Toggle for Stamina Gain
+local StaminaToggle = Tab23:CreateToggle({
    Name = "Stamina Gain (s)",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-           local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
-        sprintingModule.SprintSpeed = tonumber(Input) or 26.5
-   -- The function that takes place when the button is pressed
+   CurrentValue = false,
+   Callback = function(state)
+      local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
+      if state then
+         -- Modify stamina regen
+         sprintingModule.StaminaGain = 22
+         print("💨 Stamina Gain Increased!")
+      else
+         -- Reset
+         sprintingModule.StaminaGain = 21
+         print("💤 Stamina Gain Reset.")
+      end
    end,
 })
+
+--        /|\                /|\
+----------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section9 = Tab23:CreateSection("WIP")
+
+local Button9 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                /|\
+----------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section9 = Tab23:CreateSection("WIP")
+
+local Button9 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                /|\
+----------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section9 = Tab23:CreateSection("WIP")
+
+local Button9 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                /|\
+----------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+--Tab for \|/ (         ) \|/
+local Section9 = Tab23:CreateSection("WIP")
+
+local Button9 = Tab:CreateButton({
+   Name = "ButtonWip",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   local Rayfield = loadstring(game:HttpGet('    '))()
+      -- The function that takes place when the button is pressed
+   end,
+})
+
+--        /|\                /|\
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 ----------------------------------------------------------------------------
 --   (normal) \/   Auto farm                                                        
@@ -260,283 +347,6 @@ local Button = Tab12:CreateButton({
 ----------------------------------------------------------------------------
 --  (normal) /\                                                            
 ----------------------------------------------------------------------------
-
-
---// FULL Rayfield UI Skeleton (All Tabs)
---// Safe placeholders only — paste your real exploit code into the marked CALLBACK areas later.
---// This file intentionally DOES NOT create a Rayfield Window. It assumes you already have:
---// local Window = <your existing Rayfield window>
---// and will be inserted into that environment.
-
-local function B(tab, name, fn) tab:CreateButton({Name = name, Callback = fn}) end
-local function T(tab, name, init, flag, fn) tab:CreateToggle({Name = name, CurrentValue = init, Flag = flag, Callback = fn}) end
-local function S(tab, name, minmax, inc, suf, init, flag, fn) tab:CreateSlider({Name = name, Range = minmax, Increment = inc, Suffix = suf, CurrentValue = init, Flag = flag, Callback = fn}) end
-local function I(tab, name, placeholder, fn) tab:CreateInput({Name = name, PlaceholderText = placeholder, Callback = fn}) end
-
-assert(Window, "Window global not found. Assign your Rayfield Window to a variable named 'Window' before running this.")
-
--- 1) f (app-window-mac)
-local Tab_f = Window:CreateTab("f (app-window-mac)")
-local Sec_f_core = Tab_f:CreateSection("General")
-B(Tab_f, "Open Dev Tools", function()
-    -- CALLBACK: paste your code for developer/open tools here
-    print("Open Dev Tools pressed")
-    -- Example: prompt user to press F9 for Roblox dev console
-end)
-
--- 2) localPlayer.DisplayName (annoyed)
-local Tab_name = Window:CreateTab("localPlayer.DisplayName")
-local Sec_name = Tab_name:CreateSection("Profile")
-I(Tab_name, "Set Display Name", "Enter new display name", function(val)
-    -- CALLBACK: handle displayname spoofing / UI
-    local success, err = pcall(function()
-        local lp = game:GetService("Players").LocalPlayer
-        if lp and val and val ~= "" then
-            -- This is only local spoofing; server does not change real name
-            lp.DisplayName = val
-        end
-    end)
-    if not success then
-        print("DisplayName spoof failed:", err)
-    else
-        print("DisplayName set to:", val)
-    end
-end)
-
--- 3) Main (box)
-local Tab_Main = Window:CreateTab("Main")
-local Sec_Main_core = Tab_Main:CreateSection("Core Features")
-B(Tab_Main, "God Mode", function()
-    -- CALLBACK: god mode logic here
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character or plr.CharacterAdded:Wait()
-    local humanoid = char:FindFirstChildOfClass("Humanoid")
-    if humanoid then
-        humanoid.HealthChanged:Connect(function(hp)
-            if hp < 1 then
-                humanoid.Health = humanoid.MaxHealth
-                print("God mode prevented death")
-            end
-        end)
-        print("God Mode enabled")
-    end
-end)
-T(Tab_Main, "Invisibility", false, "Main_Invis", function(v)
-    -- CALLBACK: toggle invisibility
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character
-    if char then
-        for _, part in pairs(char:GetChildren()) do
-            if part:IsA("BasePart") then
-                part.Transparency = v and 1 or 0
-                local decal = part:FindFirstChildOfClass("Decal")
-                if decal then decal.Transparency = v and 1 or 0 end
-            elseif part:IsA("Accessory") then
-                local handle = part:FindFirstChild("Handle")
-                if handle then handle.Transparency = v and 1 or 0 end
-            end
-        end
-        print("Invisibility toggled:", v)
-    end
-end)
-
--- 4) Stamina (chevrons-right)
-local Tab_Stamina = Window:CreateTab("Stamina")
-local Sec_Stamina = Tab_Stamina:CreateSection("Movement")
-B(Tab_Stamina, "Infinite Stamina", function()
-    -- CALLBACK: infinite stamina example
-    local plr = game:GetService("Players").LocalPlayer
-    local staminaStat = plr:FindFirstChild("Stamina") or plr:WaitForChild("Stamina", 5)
-    if staminaStat then
-        staminaStat.Value = staminaStat.MaxValue or 100
-        staminaStat.Changed:Connect(function()
-            staminaStat.Value = staminaStat.MaxValue or 100
-        end)
-        print("Infinite stamina activated")
-    else
-        print("Stamina stat not found!")
-    end
-end)
-S(Tab_Stamina, "WalkSpeed", {16, 200}, 1, "speed", 26, "WalkSpeedFlag", function(val)
-    -- CALLBACK: set walkspeed
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character or plr.CharacterAdded:Wait()
-    local humanoid = char:FindFirstChildOfClass("Humanoid")
-    if humanoid then
-        humanoid.WalkSpeed = val
-        print("WalkSpeed set to", val)
-    end
-end)
-
--- 5) EspTab (scan-eye)
-local Tab_ESP = Window:CreateTab("ESP")
-local Sec_ESP_players = Tab_ESP:CreateSection("Players & Items")
-T(Tab_ESP, "Player ESP", false, "ESP_Players", function(v)
-    print("Player ESP toggled:", v)
-    -- Example: toggle ESP highlights on all players
-end)
-T(Tab_ESP, "Killer ESP", false, "ESP_Killer", function(v)
-    print("Killer ESP toggled:", v)
-    -- Example: toggle killer highlights
-end)
-T(Tab_ESP, "Item ESP", false, "ESP_Items", function(v)
-    print("Item ESP toggled:", v)
-    -- Example: toggle item highlights
-end)
-
--- 6) ACTab (workflow)
-local Tab_AC = Window:CreateTab("ACTab")
-local Sec_AC = Tab_AC:CreateSection("Automation & Cheats")
-B(Tab_AC, "Auto-Collect Items", function()
-    print("Auto-Collect triggered")
-    -- Example: loop through collectibles and fire server calls
-end)
-T(Tab_AC, "Auto Solve Generator", false, "AutoSolveGen", function(v)
-    print("Auto Solve Generator toggled:", v)
-    -- Example: start/stop generator solving routine
-end)
-
--- 7) DeviceTab (laptop-minimal)
-local Tab_Device = Window:CreateTab("DeviceTab")
-local Sec_Device = Tab_Device:CreateSection("Device Settings")
-T(Tab_Device, "Low Graphics", false, "LowGraphics", function(v)
-    if v then
-        game:GetService("Lighting").GlobalShadows = false
-        game:GetService("Lighting").FogEnd = 100000
-        print("Low graphics enabled")
-    else
-        game:GetService("Lighting").GlobalShadows = true
-        game:GetService("Lighting").FogEnd = 1000
-        print("Low graphics disabled")
-    end
-end)
-
--- 8) StunTab (shield-alert)
-local Tab_Stun = Window:CreateTab("StunTab")
-local Sec_Stun = Tab_Stun:CreateSection("Defensive")
-B(Tab_Stun, "God + Stun Protection", function()
-    print("Stun protection enabled")
-    -- Example: hook stun events and cancel or prevent them
-end)
-
--- 9) SavefileTab (gallery-horizontal-end)
-local Tab_Save = Window:CreateTab("Savefile")
-local Sec_Save = Tab_Save:CreateSection("Save & Load")
-B(Tab_Save, "Save Settings", function()
-    local flags = Window:SaveFlags()
-    print("Settings saved:", flags)
-end)
-B(Tab_Save, "Load Settings", function()
-    Window:LoadFlags()
-    print("Settings loaded")
-end)
-
--- 10) StatsTab (settings-2)
-local Tab_Stats = Window:CreateTab("StatsTab")
-local Sec_Stats = Tab_Stats:CreateSection("Player Stats")
-I(Tab_Stats, "Set Health", "Enter HP value", function(val)
-    local hp = tonumber(val)
-    if not hp then
-        print("Invalid HP value")
-        return
-    end
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character or plr.CharacterAdded:Wait()
-    local humanoid = char:FindFirstChildOfClass("Humanoid")
-    if humanoid then
-        humanoid.Health = math.clamp(hp, 0, humanoid.MaxHealth)
-        print("Set health to:", humanoid.Health)
-    end
-end)
-
--- 11) MTab (cog)
-local Tab_M = Window:CreateTab("MTab")
-local Sec_M = Tab_M:CreateSection("Misc")
-B(Tab_M, "Toggle FOV", function()
-    local cam = workspace.CurrentCamera
-    if cam.FieldOfView == 70 then
-        cam.FieldOfView = 120
-        print("FOV set to 120")
-    else
-        cam.FieldOfView = 70
-        print("FOV reset to 70")
-    end
-end)
-
--- 12) GenTab (microchip)
-local Tab_Gen = Window:CreateTab("GenTab")
-local Sec_Gen = Tab_Gen:CreateSection("Generators")
-T(Tab_Gen, "Auto Solve Generators", false, "GenAutoSolve", function(v)
-    print("Auto Solve Generators toggled:", v)
-    -- Add generator solving logic here
-end)
-B(Tab_Gen, "Teleport To Generator", function()
-    local plr = game:GetService("Players").LocalPlayer
-    local char = plr.Character or plr.CharacterAdded:Wait()
-    local genContainer = workspace:FindFirstChild("Generators") -- Example container
-    if genContainer then
-        local nearest
-        local nearestDist = math.huge
-        for _, g in pairs(genContainer:GetChildren()) do
-            if g:IsA("BasePart") then
-                local dist = (char.HumanoidRootPart.Position - g.Position).Magnitude
-                if dist < nearestDist then
-                    nearest = g
-                    nearestDist = dist
-                end
-            end
-        end
-        if nearest then
-            char.HumanoidRootPart.CFrame = nearest.CFrame + Vector3.new(0,3,0)
-            print("Teleported to generator")
-        else
-            print("No generator found")
-        end
-    else
-        print("Generators container not found")
-    end
-end)
-
--- 13) ExTab (bolt)
-local Tab_Ex = Window:CreateTab("ExTab")
-local Sec_Ex = Tab_Ex:CreateSection("Extras & Fun")
-B(Tab_Ex, "Lag Challenge", function()
-    for i = 1, 500 do        local p = Instance.new("Part")
-        p.Size = Vector3.new(1,1,1)
-        p.Position = workspace.CurrentCamera.CFrame.Position + Vector3.new(math.random(-50,50), math.random(-50,50), math.random(-50,50))
-        p.Anchored = true
-        p.Parent = workspace
-    end
-    print("Lag challenge started")
-end)
-B(Tab_Ex, "Random Server TP", function()
-    print("Teleporting to random server (placeholder)")
-    -- Your server hop code here
-end)
-
--- 14) StupidTab (microchip)
-local Tab_Stupid = Window:CreateTab("StupidTab")
-local Sec_Stupid = Tab_Stupid:CreateSection("Weird Stuff")
-B(Tab_Stupid, "Do Nothing Button", function()
-    print("You pressed the do-nothing button. Congrats.")
-end)
-
--- Optional: helper to register a quick notification function
-local function notify(msg)
-    if typeof(game) ~= "Instance" then return end
-    pcall(function()
-        if game:GetService("StarterGui"):FindFirstChild("SetCore") then
-            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Rayfield", Text = msg, Duration = 3})
-        end
-    end)
-end
-
--- End of skeleton
--- Paste your modules inside CALLBACK blocks or replace print(...) lines with loadstring/require calls.
--------------------------------------------------------------------------------------------------------------------------------
-
-
-
 
 
 
@@ -611,7 +421,7 @@ enableGodMode(player)
    end,
 })
 
-local Tab = Window:CreateTab("Esp", "rewind")
+local Tab = MainWindow:CreateTab("Esp", "rewind")
 local Section = Tab:CreateSection("Esp killers, Esp players")
 
 local Button = Tab:CreateButton({
@@ -753,7 +563,7 @@ end
    end,
 })
 
-local Tab = Window:CreateTab("Afk", "rewind")
+local Tab = MainWindow:CreateTab("Afk", "rewind")
 local Section = Tab:CreateSection("Afk teleport, afk platform")
 
 local Button = Tab:CreateButton({
@@ -806,7 +616,7 @@ end)
    end,
 })
 
-local Tab = Window:CreateTab("hitbox", "rewind")
+local Tab = MainWindow:CreateTab("hitbox", "rewind")
 local Section = Tab:CreateSection("hitbox players, hitbox killer")
 
 local Button = Tab:CreateButton({
@@ -884,7 +694,7 @@ end)
    end,
 })
 
-local Tab = Window:CreateTab("teleport", "rewind")
+local Tab = MainWindow:CreateTab("teleport", "rewind")
 local Section = Tab:CreateSection("teleport")
 
 local Button = Tab:CreateButton({
@@ -964,7 +774,7 @@ end)
    end,
 })
 
-local Tab = Window:CreateTab("Credits", "rewind")
+local Tab = MainWindow:CreateTab("Credits", "rewind")
 local Section = Tab:CreateSection("Credits")
 
 local Button = Tab:CreateButton({
@@ -991,7 +801,7 @@ local Button = Tab:CreateButton({
 local Toggle = PlayerTab:CreateToggle({
    Name = "Infinite Stamina",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Toggle341",
    Callback = function(Value)
        if Value then
            local sprintingModule = require(game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting)
@@ -1107,10 +917,10 @@ local Input = PlayerTab:CreateInput({
        end
    end,
 })
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "Killer esp",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Togg22le1",
    Callback = function(Value)
        if Value then
            if not _G.KillerESPData then
@@ -1217,10 +1027,10 @@ local Toggle = EspTab:CreateToggle({
        end
    end,
 })
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "Players' esp",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Togg213le1",
    Callback = function(Value)
        if Value then
            if not _G.SurvivorESPData then
@@ -1327,10 +1137,10 @@ local Toggle = EspTab:CreateToggle({
        end
    end,
 })
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "Item esp",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Togg1111le1",
    Callback = function(Value)
        if Value then
            if not _G.ItemESPData then
@@ -1484,10 +1294,10 @@ local Toggle = EspTab:CreateToggle({
        end
    end,
 })
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "Generators' esp",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Toggl323e1",
    Callback = function(Value)
        if Value then
            if not _G.GeneratorESPData then
@@ -1701,7 +1511,7 @@ local Toggle = EspTab:CreateToggle({
        end
    end,
 })
-local Button = MainTab:CreateButton({
+local Button = Tab:CreateButton({
    Name = "Fulbright",
    Callback = function()
        local Lighting = game:GetService("Lighting")
@@ -1740,10 +1550,10 @@ local Button = MainTab:CreateButton({
        end
    end,
 })
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "C00lkid's minions esp",
    CurrentValue = false,
-   Flag = "Toggle1",
+   Flag = "Togglew1",
    Callback = function(Value)
        if Value then
            if not _G.MinionESPData then
@@ -2139,7 +1949,7 @@ local ZombieESP = {
     Connections = {}
 }
 
-local Toggle = EspTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "1x4 Zombies Esp",
    CurrentValue = false,
    Flag = "ZombieESP",
@@ -2280,8 +2090,8 @@ local function UpdateSpeed()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Settings.Speed.Enabled and Settings.Speed.Value or 26.5
 end
 
-local MainTab = Window:NewTab("Main")
-local MainSection = MainTab:NewSection("Character")
+local Tab = MainWindow:NewTab("Main")
+local MainSection = Tab:NewSection("Character")
 
 MainSection:NewToggle("Infinite Stamina", "", function(state)
     Settings.Stamina.Enabled = state
@@ -2298,8 +2108,8 @@ MainSection:NewToggle("Enable Speed", "", function(state)
     UpdateSpeed()
 end)
 
-local ESPTab = Window:NewTab("ESP")
-local ESPSection = ESPTab:NewSection("Settings")
+local Tab = MainWindow:NewTab("ESP")
+local ESPSection = Tab:NewSection("Settings")
 
 ESPSection:NewToggle("Players", "", function(state)
     Settings.ESP.Players = state
@@ -2309,7 +2119,7 @@ ESPSection:NewToggle("Killers", "", function(state)
     Settings.ESP.Killers = state
 end)
 
-local AutoTab = Window:NewTab("Automation")
+local AutoTab = MainWindow:NewTab("Automation")
 local AutoSection = AutoTab:NewSection("Generators")
 
 AutoSection:NewToggle("Auto-Repair", "", function(state)
@@ -2376,8 +2186,8 @@ MainSection:NewToggle("Enable Speed", "", function(state)
     UpdateSpeed()
 end)
 
-local ESPTab = Window:NewTab("ESP")
-local ESPSection = ESPTab:NewSection("Settings")
+local Tab = MainWindow:NewTab("ESP")
+local ESPSection = Tab:NewSection("Settings")
 
 ESPSection:NewToggle("Players", "", function(state)
     Settings.ESP.Players = state
@@ -2387,7 +2197,7 @@ ESPSection:NewToggle("Killers", "", function(state)
     Settings.ESP.Killers = state
 end)
 
-local AutoTab = Window:NewTab("Automation")
+local AutoTab = MainWindow:NewTab("Automation")
 local AutoSection = AutoTab:NewSection("Generators")
 
 AutoSection:NewToggle("Auto-Repair", "", function(state)
