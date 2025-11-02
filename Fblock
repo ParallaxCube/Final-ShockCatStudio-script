@@ -1,0 +1,45 @@
+----------------------------------------------------------------------------
+--\/ Fblock
+----------------------------------------------------------------------------
+-- Create Tab and Section for FakeBlock functionality
+local Section9 = Tab22:CreateSection("Fblock")
+
+-- Function to play the Fake Block Animations
+local function playFakeBlockAnimation(animId)
+    local char = localPlayer.Character
+    if char then
+        local humanoid = char:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            local anim = Instance.new("Animation")
+            anim.AnimationId = "rbxassetid://" .. animId
+            local track = humanoid:LoadAnimation(anim)
+            track:Play()
+        end
+    end
+end
+
+-- Buttons for each animation mode
+ Tab22:CreateButton({
+    Name = "Fake Block (Normal)",
+    Callback = function()
+        playFakeBlockAnimation("72722244508749") -- Normal animation ID
+    end
+})
+
+ Tab22:CreateButton({
+    Name = "Fake Block (M3&4)",
+    Callback = function()
+        playFakeBlockAnimation("96959123077498") -- M3&4 animation ID
+    end
+})
+
+ Tab22:CreateButton({
+    Name = "Toggle Fake Block GUI",
+    Callback = function()
+        -- This will toggle the visibility of the Rayfield UI
+        Rayfield:ToggleUI()
+    end
+})
+----------------------------------------------------------------------------
+--FAKE BLOCK /\
+----------------------------------------------------------------------------
